@@ -10,7 +10,8 @@ import (
 
 func main() {
 	r := mux.NewRouter()
-	r.HandleFunc("/likes/{media_id}", handler.LikeHandler)
+	r.HandleFunc("/instagram/likes/{media_id}", handler.LikeHandler)
+	// r.HandleFunc("/instagram/follow/{account_id}", handler.FollowHandler)
 	http.Handle("/", r)
 
 	log.Fatal(http.ListenAndServe(":8080", r))
