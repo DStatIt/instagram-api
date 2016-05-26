@@ -9,6 +9,6 @@ import (
 
 func TestHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	fmt.Fprint(w, "found", vars["media_id"])
+	fmt.Fprint(w, "found", vars["test"])
 
 }
