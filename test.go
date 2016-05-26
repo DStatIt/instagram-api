@@ -1,3 +1,0 @@
-package instagram-api
-
-//Test
