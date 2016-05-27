@@ -1,31 +1,16 @@
 package IGapi
 
-import "net/http"
+import (
+	"net/http"
 
-type Route struct {
-	Name        string
-	Method      string
-	Pattern     string
-	HandlerFunc http.HandlerFunc
-}
+	"github.com/gorilla/mux"
+)
 
-type Routes []Route
-
-var routes = Routes{
-	Route{
-		"Index",
-		"GET",
-		"/",
-		Index,
-	},
-	Route{
-		"Test",
-		"GET",
-		"/test/{test}",
-		TestHandler,
-	},
-}
+var router = mux.NewRouter()
 
 func init() {
-	NewRouter()
+	router.HandleFunc("/test/{test}", TestHandler)
+	http.Handle("/", router)
+	// router.HandleFunc("/instagram/test/{media_id}", handler.LikeHandler)
+
 }

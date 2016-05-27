@@ -26,4 +26,3 @@ package IGapi
 // 	if err := producer.Publish("instagram_likes", []byte(vars["media_id"])); err != nil {
 // 		panic(err)
 // 	}
-// }
