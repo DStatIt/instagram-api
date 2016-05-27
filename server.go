@@ -1,4 +1,4 @@
-package main
+package IGapi
 
 import "net/http"
 

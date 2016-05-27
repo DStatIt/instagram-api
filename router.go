@@ -1,4 +1,4 @@
-package instagram-api
+package IGapi
 
 import (
 	"net/http"
