@@ -27,5 +27,5 @@ var routes = Routes{
 }
 
 func init() {
-	router := NewRouter()
+	NewRouter()
 }
