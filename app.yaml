@@ -1,3 +1,4 @@
+application: russ-ig
 version: 1
 runtime: go
 api_version: go1

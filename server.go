@@ -11,7 +11,7 @@ import (
 var router = mux.NewRouter()
 
 func init() {
-	router.HandleFunc("/test/{testId}", handler.TestHandler)
+	router.HandleFunc("/test/{test}", handler.TestHandler)
 	// router.HandleFunc("/instagram/test/{media_id}", handler.LikeHandler)
 	http.Handle("/", router)
 }
