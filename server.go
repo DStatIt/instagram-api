@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/DStatIt/instagram-api/handler"
+	"handler"
 
 	"github.com/gorilla/mux"
 )
